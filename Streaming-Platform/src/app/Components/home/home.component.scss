@@ -1,0 +1,51 @@
+.heading{
+    align-items: flex-start;
+    padding-left: 5rem;
+    font-size: x-large
+}
+// .card-view{
+//     padding: 0;
+//     height: 100%;
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+// }
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    padding-top: 15px;
+}
+.view{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    padding-top: 15px;
+}
+.list{
+    text-decoration: none;
+    display: flex;
+    margin: 15px;
+}
+.card-view{
+    text-align: center;
+    width: 210px;
+    height: 210px;
+}
+.card{
+    padding: 16px!important;
+}
+
+.search-hero {
+    max-width: 500px;
+    padding: 2rem;
+  }
+  
+  .form-control {
+    box-shadow: 0 10px 40px 0 #B0C1D9;
+  }
+  .form-control::placeholder  {
+    font-family: FontAwesome;
+  }

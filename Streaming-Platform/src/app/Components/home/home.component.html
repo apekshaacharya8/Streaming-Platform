@@ -1,1 +1,74 @@
-<p>home works!</p>
+<div class="search-hero">
+  <input class="form-control" type="text" name="search" autocomplete="off"  placeholder="&#61442;  Start searching for movie through name ">
+</div>
+ <h2 class="heading">Trending</h2>
+ 
+ <!-- <div *ngFor="let movie of movielist" class='p-5'style="display: inline-block" >
+   
+         
+            <mat-card class="example-card">
+              <img mat-card-image 
+              src="https://image.tmdb.org/t/p/w185_and_h278_bestv2/{{ movie.poster_path }}"
+              alt=""
+              />
+              <mat-card-subtitle>{{movie.title}}</mat-card-subtitle>
+              <mat-card-subtitle>{{movie.vote_average}}/10</mat-card-subtitle>
+              
+                
+            </mat-card>
+               
+               
+    
+</div>  -->
+<div class="container-fluid row ">
+  <div class="col-sm-3 p-4" *ngFor="let movie of movielist ">
+   
+      <mat-card class="card">
+        <mat-card-content class="">
+          <!-- <div class="col-12"> -->
+            <img mat-card-image  
+            src="https://image.tmdb.org/t/p/w185_and_h278_bestv2/{{ movie.poster_path }}"
+            alt=""
+            />
+          <!-- </div> -->
+          <a routerLink="/movie-detail"
+          class="title">
+            {{movie.title}}
+          </a>
+          <div class="title">
+            {{movie.vote_average/2}}/5
+          </div>
+        </mat-card-content>
+      </mat-card>
+   
+  </div>
+</div>
+<mat-paginator [length]="100"
+              [pageSize]="10"
+              [pageSizeOptions]="[5, 10, 25, 100]"
+              aria-label="Select page">
+</mat-paginator>
+
+<!-- <div class="main">
+  <div class="view" *ngFor="let movie of movielist">
+    <div class="list">
+    <mat-card class="card-view">
+      <mat-card-content>
+        
+          <img mat-card-image 
+          src="https://image.tmdb.org/t/p/w185_and_h278_bestv2/{{ movie.poster_path }}"
+          alt=""
+          />
+      
+        <div class="title">
+          {{movie.title}}
+        </div>
+      </mat-card-content>
+    </mat-card></div>
+  </div>
+</div> -->
+
+
+
+
+
